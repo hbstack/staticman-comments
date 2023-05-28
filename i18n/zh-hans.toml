@@ -10,6 +10,9 @@ other = "内容"
 [comments_message_help]
 other = "支持 Markdown 格式"
 
+[comments_message_invalid]
+other = "无效消息"
+
 [comments_name]
 other = "名称"
 
