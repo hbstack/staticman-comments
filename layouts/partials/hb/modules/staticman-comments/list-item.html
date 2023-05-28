@@ -19,14 +19,14 @@
       <div class="staticman-comment-header d-flex text-body-secondary mb-0">
         {{- if .url }}
           <a
-            class="staticman-comment-name me-2 text-decoration-none text-body-secondary"
+            class="staticman-comment-name fw-bold me-2 text-decoration-none text-body-secondary"
             href="{{ .url }}"
             target="_blank"
             rel="noopener noreferrer">
             {{- .name -}}
           </a>
         {{- else }}
-          <span class="staticman-comment-name me-2">
+          <span class="staticman-comment-name fw-bold me-2">
             {{- .name -}}
           </span>
         {{- end }}
