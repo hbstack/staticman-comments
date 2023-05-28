@@ -10,6 +10,9 @@ other = "Message"
 [comments_message_help]
 other = "Styling with Markdown is supported"
 
+[comments_message_invalid]
+other = "Invalid message"
+
 [comments_name]
 other = "Name"
 
