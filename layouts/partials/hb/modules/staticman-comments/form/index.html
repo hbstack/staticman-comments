@@ -1,0 +1,8 @@
+{{- $action := partialCached "hb/modules/staticman-comments/functions/form-action" . . }}
+<form
+  class="staticman-form staticman-comment-form needs-validation mb-3"
+  novalidate
+  action="{{ $action }}">
+  {{- partial "hb/modules/staticman-comments/form/slug" . }}
+  {{- partialCached "hb/modules/staticman-comments/form/body" . . }}
+</form>

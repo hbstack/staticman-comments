@@ -1,0 +1,5 @@
+{{- page.Scratch.Set "reCaptcha-v2" true }}
+{{- partial "hb/modules/staticman-comments/form/index" . }}
+{{- partial "hb/modules/staticman-comments/reply-modal" . }}
+{{- partialCached "hb/modules/staticman-comments/list" page page }}
+

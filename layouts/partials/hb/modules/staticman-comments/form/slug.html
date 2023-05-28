@@ -1,0 +1,6 @@
+{{/* The slug represents the save path of comments. */}}
+{{- $slug := "" }}
+{{- with page.File }}
+  {{- $slug = printf "%s" .UniqueID }}
+{{- end }}
+<input name="options[slug]" type="hidden" value="{{ $slug }}" />

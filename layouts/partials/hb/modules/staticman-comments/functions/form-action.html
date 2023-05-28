@@ -1,0 +1,8 @@
+{{- $url := printf "%s/v3/entry/%s/%s/%s/%s" 
+  (replaceRE "/$" "" .endpoint)
+  .service
+  .repo
+  .branch
+  .property
+}}
+{{- return $url -}}

@@ -1,0 +1,15 @@
+<div class="mb-3">
+  <input
+    type="hidden"
+    name="options[reCaptcha][siteKey]"
+    value="{{ .sitekey }}" />
+  <input
+    type="hidden"
+    name="options[reCaptcha][secret]"
+    value="{{ .secret }}" />
+  <div class="g-recaptcha" data-sitekey="{{ .sitekey }}"></div>
+  <textarea name="g-recaptcha-v2-response" hidden required></textarea>
+  <div class="invalid-feedback">
+    {{ i18n "comments_recaptcha" | lower | i18n "hb_form_field_invalid_feedback" }}
+  </div>
+</div>

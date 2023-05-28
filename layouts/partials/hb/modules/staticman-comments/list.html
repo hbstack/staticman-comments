@@ -1,0 +1,12 @@
+{{- $slug := "" }}
+{{- with .File }}
+  {{- $slug = .UniqueID }}
+{{- end }}
+{{- $comments := partialCached "hb/modules/staticman-comments/functions/comments" . page }}
+{{- with $comments }}
+  <div class="staticman-comments">
+    {{- range where $comments "reply_to" "eq" "" }}
+      {{ partial "hb/modules/staticman-comments/list-item" . }}
+    {{- end }}
+  </div>
+{{- end }}

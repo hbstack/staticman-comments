@@ -1,0 +1,19 @@
+.staticman-comment-avatar {
+    height: 48px;
+    width: 48px;
+}
+
+.staticman-comment-avatar-none {
+    &::before {
+        content: attr(data-first-char);
+        font-size: 1.25rem;
+    }
+}
+
+.staticman-comment-header {
+    font-size: 0.785rem;
+}
+
+.staticman-comment-form-message {
+    min-height: 120px !important;
+}

@@ -1,0 +1,29 @@
+[comments]
+other = "评论"
+
+[comments_email]
+other = "邮箱"
+
+[comments_message]
+other = "内容"
+
+[comments_message_help]
+other = "支持 Markdown 格式"
+
+[comments_name]
+other = "名称"
+
+[comments_recaptcha]
+other = "reCaptcha"
+
+[comments_reply]
+other = "回复"
+
+[comments_reply_to]
+other = "回复"
+
+[comments_submit]
+other = "提交"
+
+[comments_url]
+other = "URL"

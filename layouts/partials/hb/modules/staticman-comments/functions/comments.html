@@ -1,0 +1,9 @@
+{{- $slug := "" }}
+{{- with page.File }}
+  {{- $slug = printf "%s" .UniqueID }}
+{{- end }}
+{{- $comments := slice }}
+{{- with index site.Data.comments $slug }}
+  {{- $comments = sort . "date" "desc" }}
+{{- end }}
+{{- return $comments -}}

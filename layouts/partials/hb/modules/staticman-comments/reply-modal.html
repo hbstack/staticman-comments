@@ -1,0 +1,19 @@
+<div class="modal fade" id="staticman-comment-reply-modal" tabindex="-1" aria-labelledby="comment-reply-modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="comment-reply-modal-title">
+                    {{ i18n "comments_reply_to" }} <span class="fw-bold" id="comment-reply-modal-to"></span>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                {{- $action := partialCached "hb/modules/staticman-comments/functions/form-action" . . }}
+                <form class="staticman-form staticman-comment-reply-form needs-validation mb-3" novalidate action="{{ $action }}">
+                    {{- partial "hb/modules/staticman-comments/form/slug" . }}
+                    {{- partialCached "hb/modules/staticman-comments/form/body" . . }}
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

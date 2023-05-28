@@ -1,0 +1,78 @@
+{{- $comments := partialCached "hb/modules/staticman-comments/functions/comments" . page }}
+<div class="staticman-comment mb-4" id="staticman-comment-{{ ._id }}">
+  <div class="mb-2 d-flex">
+    {{- if .email }}
+      <img
+        class="staticman-comment-avatar rounded-circle me-2"
+        src="https://www.gravatar.com/avatar/{{ .email }}?d=mp&size=64"
+        title="{{ .name }}"
+        width="64px"
+        height="64px" />
+    {{- else }}
+      {{- $fc := substr .name 0 1 | upper }}
+      {{- $bg := "primary" }}
+      <div
+        class="staticman-comment-avatar staticman-comment-avatar-none rounded-circle me-2 bg-{{ $bg }} text-white d-flex justify-content-center align-items-center"
+        data-first-char="{{ $fc }}"></div>
+    {{- end }}
+    <div class="staticman-comment-content d-flex flex-column flex-grow-1">
+      <div class="staticman-comment-header d-flex text-body-secondary mb-0">
+        {{- if .url }}
+          <a
+            class="staticman-comment-name me-2 text-decoration-none text-body-secondary"
+            href="{{ .url }}"
+            target="_blank"
+            rel="noopener noreferrer">
+            {{- .name -}}
+          </a>
+        {{- else }}
+          <span class="staticman-comment-name me-2">
+            {{- .name -}}
+          </span>
+        {{- end }}
+        <span class="staticman-comment-date" data-timestamp="{{ .date }}">
+          {{- .date | int | time | time.Format ":date_long" -}}
+        </span>
+        {{- $rootId := default ._id .root_id }}
+        <button
+          class="btn btn-sm btn-secondary staticman-reply-button px-1 py-0 ms-auto"
+          aria-label="{{ i18n `comments_reply` }}"
+          data-bs-toggle="modal"
+          data-bs-target="#staticman-comment-reply-modal"
+          data-root-id="{{ $rootId }}"
+          data-comment-id="{{ ._id }}"
+          data-comment-name="{{ .name }}">
+          {{- $icon := dict "vendor" "bootstrap" "name" "reply" }}
+          {{ partialCached "icons/icon" $icon $icon }}
+        </button>
+      </div>
+      <div class="staticman-comment-body mb-2">
+        {{- if .reply_to }}
+          {{- $reply := false }}
+          {{- range $comments }}
+            {{- if eq ._id $.reply_to }}
+              {{- $reply = . }}
+              {{- break }}
+            {{- end }}
+          {{- end }}
+          {{- with $reply }}
+            <a
+              class="text-decoration-none text-body-secondary me-1"
+              href="#staticman-comment-{{ ._id }}">
+              @{{- .name -}}
+            </a>
+          {{- end }}
+        {{- end }}
+        {{- $message := replaceRE "(?i)<script[^>]*>[^<]*</script>" "<span class=\"text-muted opacity-50\">~~invalid message~~</span>" .message }}
+        {{- $message | markdownify }}
+        {{- with where $comments "root_id" "eq" ._id }}
+          <div class="mt-3">
+            {{- range (sort . "date" "asc") }}
+              {{- partial "hb/modules/staticman-comments/list-item" . }}
+            {{- end }}
+          </div>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</div>

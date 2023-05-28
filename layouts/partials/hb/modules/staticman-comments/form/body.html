@@ -1,0 +1,86 @@
+{{- $requiredFields := .required_fields }}
+<input name="fields[reply_to]" type="hidden" value="" />
+<input name="fields[root_id]" type="hidden" value="" />
+<div class="d-none comment-success-message">
+  {{- cond (default true .moderation) "comments_success_message_moderation" "comments_success_message" | i18n -}}
+</div>
+<div class="row g-3 mb-2">
+  <div class="col-12 col-md-4 mb-2">
+    <div class="form-floating required">
+      <input
+        class="form-control form-control-sm"
+        aria-label="{{ i18n `comments_name` }}"
+        name="fields[name]"
+        type="text"
+        id="staticman-comment-name"
+        autocomplete="off"
+        required />
+      <label for="languages-select">{{ i18n "comments_name" }}</label>
+      <div class="invalid-feedback">
+        {{ i18n "comments_name" | lower | i18n "hb_form_field_invalid_feedback" }}
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-4 mb-2 ms-auto">
+    <div
+      class="form-floating{{ cond (in $requiredFields `email`) ` required` `` }}">
+      <input
+        class="form-control form-control-sm"
+        aria-label="{{ i18n `comments_email` }}"
+        name="fields[email]"
+        type="email"
+        id="staticman-comment-email"
+        autocomplete="off"
+        {{ if in $requiredFields "email" }}required{{ end }} />
+      <label for="comment-email">{{- i18n "comments_email" -}}</label>
+      <div class="invalid-feedback">
+        {{ i18n "comments_email" | lower | i18n "hb_form_field_invalid_feedback" }}
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-4 mb-2">
+    <div
+      class="form-floating{{ cond (in $requiredFields `url`) ` required` `` }}">
+      <input
+        class="form-control form-control-sm"
+        aria-label="{{ i18n `comments_url` }}"
+        name="fields[url]"
+        type="url"
+        id="staticman-comment-url"
+        autocomplete="off"
+        {{ if in $requiredFields "url" }}required{{ end }} />
+      <label for="staticman-comment-url">{{- i18n "comments_url" -}}</label>
+      <div class="invalid-feedback">
+        {{ i18n "comments_url" | i18n "hb_form_field_invalid_feedback" }}
+      </div>
+    </div>
+  </div>
+  <div class="col-12 mb-2">
+    <div class="form-floating required">
+      <textarea
+        class="staticman-comment-form-message form-control"
+        aria-label="{{ i18n `comments_message` }}"
+        name="fields[message]"
+        id="staticman-comment-message"
+        required></textarea>
+      <div class="form-text">{{ i18n "comments_message_help" }}</div>
+      <label for="staticman-comment-message">
+        {{- i18n "comments_message" -}}
+      </label>
+      <div class="invalid-feedback">
+        {{ i18n "comments_message" | lower | i18n "hb_form_field_invalid_feedback" }}
+      </div>
+    </div>
+  </div>
+</div>
+{{- with .reCaptcha }}
+  {{- partialCached "hb/modules/staticman-comments/form/recaptcha" . . }}
+{{- end }}
+<div class="mb-5">
+  <button class="btn btn-primary" type="submit">
+    {{- i18n "comments_submit" -}}
+    <div class="spinner-border spinner-border-sm ms-1 d-none" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </button>
+</div>
