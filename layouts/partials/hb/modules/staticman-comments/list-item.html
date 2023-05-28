@@ -63,8 +63,9 @@
             </a>
           {{- end }}
         {{- end }}
-        {{- $message := replaceRE "(?i)<script[^>]*>[^<]*</script>" "<span class=\"text-muted opacity-50\">~~invalid message~~</span>" .message }}
-        {{- $message | markdownify }}
+        {{- $message := .message | markdownify }}
+        {{- $message = replaceRE "(?i)<script[^>]*>[^<]*</script>" `<span class="text-muted opacity-50 text-decoration-line-through">invalid message</span>` $message }}
+        {{ $message | safeHTML }}
         {{- with where $comments "root_id" "eq" ._id }}
           <div class="mt-3">
             {{- range (sort . "date" "asc") }}
