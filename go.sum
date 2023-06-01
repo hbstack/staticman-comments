@@ -4,6 +4,7 @@ github.com/hbstack/form v0.1.0 h1:pyt80S5m7deUQwlgUNU1Xcphaf+G21j/C4rNdoGeJAk=
 github.com/hbstack/form v0.1.0/go.mod h1:qIn/ivaNR+1CkbNK7+s9E9g5kbg04kka3C0Axaz9Rl4=
 github.com/hbstack/hb v0.5.0 h1:5KopgFbczqA1PKcWS1X8YWMjMq698MlasTF8FxH5E4U=
 github.com/hbstack/hb v0.5.0/go.mod h1:37E1uTMQx1Hix+VdwlWkW74fi3ct5+KlCCBywv9l3Ac=
+github.com/hbstack/hb v0.5.1/go.mod h1:qlNnPNO1MRsrxxDvFMz98DMFafaBgvtAfBYiteR3i1A=
 github.com/hbstack/snackbar v0.1.2 h1:/9R2CdWnLcOBobxzdpe30cgM1gcKJAXtbVbZtp2pgmY=
 github.com/hbstack/snackbar v0.1.2/go.mod h1:4uZSGpI9ZtR9by0bA8yJW2y61sRks2W4a8VvyMluXuo=
 github.com/hugomods/icons v0.6.0 h1:G6RU93okhPPRDh/jqcew9gwkcYpSpg0rCBv4S6yUAFw=
