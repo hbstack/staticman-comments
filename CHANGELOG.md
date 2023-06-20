@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/hbstack/staticman-comments/compare/v0.2.0...v0.2.1) (2023-06-20)
+
+
+### Continuous Integration
+
+* **deps:** bump github.com/hbstack/form to v0.1.1 ([c3ab670](https://github.com/hbstack/staticman-comments/commit/c3ab6709f57fb17a9387fab80442f0087622518c))
+
 ## [0.2.0](https://github.com/hbstack/staticman-comments/compare/v0.1.1...v0.2.0) (2023-05-28)
 
 
