@@ -12,3 +12,4 @@ github.com/hugomods/icons/vendors/bootstrap v0.5.0 h1:CHEGk677heq2kJZa7XsGHRc3Hw
 github.com/hugomods/icons/vendors/bootstrap v0.5.0/go.mod h1:kfC17VWV+tNi6PGF4AY7CJBBa1/HEgWxCYq2kNOdcdI=
 github.com/hugomods/recaptcha-v2 v0.1.0 h1:YUOUTHaR73+EdMubGGMGxKmHtrMDlwDzbVMHc56Kxok=
 github.com/hugomods/recaptcha-v2 v0.1.0/go.mod h1:LX4oUH6d2TagnPUt/o4JClM7K9kxlWBZQ9hKz6+vZyw=
+github.com/hugomods/recaptcha-v2 v0.1.1/go.mod h1:LX4oUH6d2TagnPUt/o4JClM7K9kxlWBZQ9hKz6+vZyw=
