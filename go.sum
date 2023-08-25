@@ -6,6 +6,7 @@ github.com/hbstack/hb v0.5.1 h1:8ikjjP7Rvnq1inaR53KezTX49es6+Ph053fHk+uY+to=
 github.com/hbstack/hb v0.5.1/go.mod h1:qlNnPNO1MRsrxxDvFMz98DMFafaBgvtAfBYiteR3i1A=
 github.com/hbstack/hb v0.5.2/go.mod h1:S/08mx1tK6yxjQIkSqvpqG8HrBzMBDJq1WC5QjXW9p0=
 github.com/hbstack/hb v0.6.0/go.mod h1:S/08mx1tK6yxjQIkSqvpqG8HrBzMBDJq1WC5QjXW9p0=
+github.com/hbstack/hb v0.7.0/go.mod h1:S/08mx1tK6yxjQIkSqvpqG8HrBzMBDJq1WC5QjXW9p0=
 github.com/hbstack/snackbar v0.1.2 h1:/9R2CdWnLcOBobxzdpe30cgM1gcKJAXtbVbZtp2pgmY=
 github.com/hbstack/snackbar v0.1.2/go.mod h1:4uZSGpI9ZtR9by0bA8yJW2y61sRks2W4a8VvyMluXuo=
 github.com/hugomods/icons v0.6.0 h1:G6RU93okhPPRDh/jqcew9gwkcYpSpg0rCBv4S6yUAFw=
