@@ -7,6 +7,6 @@ require (
 	github.com/hbstack/form v0.1.1 // indirect
 	github.com/hbstack/hb v0.8.1 // indirect
 	github.com/hbstack/snackbar v0.1.2 // indirect
-	github.com/hugomods/icons/vendors/bootstrap v0.5.2 // indirect
+	github.com/hugomods/icons/vendors/bootstrap v0.5.3 // indirect
 	github.com/hugomods/recaptcha-v2 v0.1.1 // indirect
 )
