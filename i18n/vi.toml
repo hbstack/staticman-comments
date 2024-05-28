@@ -1,0 +1,38 @@
+[comments]
+other = "Comments"
+
+[comments_email]
+other = "Email"
+
+[comments_message]
+other = "Message"
+
+[comments_message_help]
+other = "Styling with Markdown is supported"
+
+[comments_message_invalid]
+other = "Invalid message"
+
+[comments_name]
+other = "Name"
+
+[comments_recaptcha]
+other = "reCaptcha"
+
+[comments_reply]
+other = "Reply"
+
+[comments_reply_to]
+other = "Reply to"
+
+[comments_submit]
+other = "Submit"
+
+[comments_success_message]
+other = "Comment successfully submitted! Your message will be shown in a few minutes."
+
+[comments_success_message_moderation]
+other = "Comment successfully submitted! Your message will be shown once our moderators review it."
+
+[comments_url]
+other = "URL"
