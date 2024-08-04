@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.3.1](https://github.com/hbstack/staticman-comments/compare/v0.3.0...v0.3.1) (2024-08-04)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hbstack/form to v0.2.0 ([501ed93](https://github.com/hbstack/staticman-comments/commit/501ed931812e240ce8a98d2554fd38635665ae6e))
+* **deps:** update module github.com/hbstack/hb to v0.12.3 ([40f37b7](https://github.com/hbstack/staticman-comments/commit/40f37b765814eeac892b195923ec88810daee7b2))
+* **deps:** update module github.com/hugomods/icons/vendors/bootstrap to v0.5.7 ([b80374b](https://github.com/hbstack/staticman-comments/commit/b80374b4deec6a7d54b4da9905004caccf9103b4))
+
 ## [0.3.0](https://github.com/hbstack/staticman-comments/compare/v0.2.1...v0.3.0) (2024-05-28)
 
 
