@@ -1,5 +1,28 @@
 # Changelog
 
+## [0.3.1](https://github.com/hbstack/staticman-comments/compare/v0.3.0...v0.3.1) (2025-10-14)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hbstack/form to v0.2.0 ([501ed93](https://github.com/hbstack/staticman-comments/commit/501ed931812e240ce8a98d2554fd38635665ae6e))
+* **deps:** update module github.com/hbstack/hb to v0.12.3 ([40f37b7](https://github.com/hbstack/staticman-comments/commit/40f37b765814eeac892b195923ec88810daee7b2))
+* **deps:** update module github.com/hbstack/hb to v0.12.4 ([21b2e7a](https://github.com/hbstack/staticman-comments/commit/21b2e7a11cc005bb2496ece540fd6ff98e6b6775))
+* **deps:** update module github.com/hbstack/hb to v0.13.0 ([9e1838e](https://github.com/hbstack/staticman-comments/commit/9e1838ee23eb6542e64a577397c519cc21c97008))
+* **deps:** update module github.com/hbstack/hb to v0.14.0 ([6d1aebd](https://github.com/hbstack/staticman-comments/commit/6d1aebd8bc763aeb631105e2f8a14f6a002161f4))
+* **deps:** update module github.com/hbstack/hb to v0.15.0 ([8cd8249](https://github.com/hbstack/staticman-comments/commit/8cd824940a82d1a982522cfa70bd45a55c0c33ff))
+* **deps:** update module github.com/hbstack/hb to v0.15.1 ([52402a2](https://github.com/hbstack/staticman-comments/commit/52402a20f97424f256f8196bd575e19b3e801f7f))
+* **deps:** update module github.com/hbstack/hb to v0.15.2 ([2acd892](https://github.com/hbstack/staticman-comments/commit/2acd892486adcacce8defd6a06a79c9db21baaee))
+* **deps:** update module github.com/hbstack/hb to v0.15.3 ([4d7052c](https://github.com/hbstack/staticman-comments/commit/4d7052c8644255ccad8f43f233c66d202e563caa))
+* **deps:** update module github.com/hbstack/hb to v0.15.4 ([3f5b381](https://github.com/hbstack/staticman-comments/commit/3f5b381cd881fb4ac0e4d6cefa465930bf7b2b40))
+* **deps:** update module github.com/hbstack/hb to v0.16.0 ([6253d3a](https://github.com/hbstack/staticman-comments/commit/6253d3ae5604b4d51934be95e75f8b4fc542389b))
+* **deps:** update module github.com/hbstack/hb to v0.16.2 ([f2cea59](https://github.com/hbstack/staticman-comments/commit/f2cea59aabc6388a3e51b89d71322b800ad49407))
+* **deps:** update module github.com/hugomods/icons/vendors/bootstrap to v0.5.10 ([b969add](https://github.com/hbstack/staticman-comments/commit/b969add1d11f3547dadef0eddd5f93a4394050fc))
+* **deps:** update module github.com/hugomods/icons/vendors/bootstrap to v0.5.11 ([12cc513](https://github.com/hbstack/staticman-comments/commit/12cc513879559fc9a1a73af254a32494472ec0c2))
+* **deps:** update module github.com/hugomods/icons/vendors/bootstrap to v0.5.7 ([b80374b](https://github.com/hbstack/staticman-comments/commit/b80374b4deec6a7d54b4da9905004caccf9103b4))
+* **deps:** update module github.com/hugomods/icons/vendors/bootstrap to v0.5.8 ([b79982f](https://github.com/hbstack/staticman-comments/commit/b79982f0ccc729819de4ab6fd98a280691c9b105))
+* **deps:** update module github.com/hugomods/icons/vendors/bootstrap to v0.5.9 ([5c0b6fb](https://github.com/hbstack/staticman-comments/commit/5c0b6fb5b5127911c63e4fbd21053a094ba8b8ca))
+
 ## [0.3.0](https://github.com/hbstack/staticman-comments/compare/v0.2.1...v0.3.0) (2024-05-28)
 
 
